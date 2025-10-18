@@ -58,13 +58,131 @@ body {
 .nav-links a {
     font-family: Arial, Helvetica, sans-serif;
     color: #2f307b;
-    font-weight: 600px;
+    font-weight: 600;
     border-bottom: 2px solid transparent;
+}
+
+@media (max-width: 900px){
+    .container{
+        padding: 0 16px;
+    }
+
+    .hero-image, .kasd-image{
+        width: 100%;
+        max-width: 720px;
+    }
+
+    .main-nav{
+        gap: 12px;
+    }
 }
 
 .nav-links a:hover {
     color: #536cb0;
     border-bottom-color: #3b533f;
+}
+
+@media (max-width: 600px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .main-header {
+        padding: 14px 0;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .logo-image {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+
+    .container-hero {
+        padding: 40px 10px;
+        gap: 12px;
+    }
+
+    .container-hero h1 {
+        font-size: 1.4rem;
+        padding: 0 8px;
+    }
+
+    .hero-image,
+    .kasd-image {
+        width: 100%;
+        max-width: 420px;
+    }
+}
+
+.nav-links a {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #2f307b;
+    font-weight: 600; /* removed px */
+    border-bottom: 2px solid transparent;
+}
+
+@media (max-width: 600px) {
+    .main-nav {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .main-header {
+        padding: 14px 0;
+    }
+
+    .logo {
+        font-size: 18px;
+    }
+
+    .logo-image {
+        width: 20px;
+        height: 20px;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+
+    .nav-links a {
+        font-size: 16px;
+        padding: 6px 8px;
+    }
+
+    .container-hero {
+        padding: 40px 10px;
+        gap: 12px;
+    }
+
+    .container-hero h1 {
+        font-size: 1.4rem;
+        padding: 0 8px;
+    }
+
+    .hero-image,
+    .kasd-image {
+        width: 100%;
+        max-width: 420px;
+    }
 }
 
 .container-hero {
